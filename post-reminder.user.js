@@ -8,7 +8,7 @@
 // @grant        GM_addValueChangeListener
 // @grant        GM_removeValueChangeListener
 // @require      https://code.jquery.com/ui/1.11.4/jquery-ui.min.js
-// @require      
+// @require      https://rawgit.com/enki-code/UserScripts/master/reminders.js
 // @run-at document-end
 // ==/UserScript==
 

@@ -18,11 +18,11 @@ var Reminders = {
             "siteName": reminder.siteName,
             "reminderDate": reminder.reminderDate
         };
-        alert(reminder.postUrl);
+        //alert(reminder.postUrl);
     },
 
     Clear() {
-        console.log("Clearing Reminders");
+        reminders = {};
     },
 
     HasReminder() {

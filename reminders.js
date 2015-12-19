@@ -37,11 +37,8 @@ var Reminders = {
         }
     },
 
-    Remove() {
-        if (reminders.hasOwnProperty(reminderID)) {
-            delete reminders[reminderId];
-        }
-
+    Remove(reminderId) {
+        delete reminders[reminderId];
     },
 
     Save() {

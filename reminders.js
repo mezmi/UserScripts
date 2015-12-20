@@ -12,6 +12,7 @@ var Reminders = {
 
     Add(reminder) {
         reminders[reminder.reminderId] = {
+            "reminderId": reminder.reminderId,
             "postId": reminder.postId,
             "postUrl": reminder.postUrl,
             "postTitle": reminder.postTitle,

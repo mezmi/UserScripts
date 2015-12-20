@@ -4,7 +4,7 @@ var Reminder = function (reminderId, postId, postUrl, postTitle, postType, siteN
     this.postId = postId;
     this.postUrl = postUrl;
     this.postTitle = postTitle;
-    this.postTyle = postType
+    this.postType = postType
     this.siteName = siteName;
     this.reminderDate = reminderDate;
 };

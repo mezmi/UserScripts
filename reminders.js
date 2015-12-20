@@ -1,9 +1,10 @@
 
-var Reminder = function (reminderId, postId, postUrl, postTitle, siteName, reminderDate) {
+var Reminder = function (reminderId, postId, postUrl, postTitle, postType, siteName, reminderDate) {
     this.reminderId = reminderId;
     this.postId = postId;
     this.postUrl = postUrl;
     this.postTitle = postTitle;
+    this.postTyle = postType
     this.siteName = siteName;
     this.reminderDate = reminderDate;
 };
@@ -16,6 +17,7 @@ var Reminders = {
             "postId": reminder.postId,
             "postUrl": reminder.postUrl,
             "postTitle": reminder.postTitle,
+            "postType": reminder.postType,
             "siteName": reminder.siteName,
             "reminderDate": reminder.reminderDate
         };
@@ -24,6 +26,7 @@ var Reminders = {
                     "\npostId" + reminder.postId +
                     "\npostUrl" + reminder.postUrl +
                     "\npostTitle" + reminder.postTitle +
+                    "\npostType" + reminder.postType +
                     "\nsiteName" + reminder.siteName +
                     "\nreminderDate" + reminder.reminderDate
         );

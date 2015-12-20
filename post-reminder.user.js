@@ -86,10 +86,6 @@ $(function () {
             Reminders.Save();
 
             highlightCalendar(calendar, reminderDate);
-            alert("Title: " + title +
-                  "\nReminder ID: " + reminderId +
-                  "\nPost Url: " + sitename + postUrl +
-                  "\nReminder Date: " + reminderDate.toDateString());
 
             //make sure the reminder was added
             console.log("Reminder Added: " + reminders[reminderId].postTitle);
@@ -113,7 +109,7 @@ $(function () {
     $('#reminderlist li a').click(function (e) {
         e.preventDefault();
         var id = $(this).data("reminderid");
-        alert(id);
+
         Reminders.Remove(id);
         Reminders.Save();
         

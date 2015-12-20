@@ -19,7 +19,14 @@ var Reminders = {
             "siteName": reminder.siteName,
             "reminderDate": reminder.reminderDate
         };
-        //alert(reminder.postUrl);
+        console.log("Adding Reminder" +
+                    "\nreminderId" + reminder.reminderId + 
+                    "\npostId" + reminder.postId +
+                    "\npostUrl" + reminder.postUrl +
+                    "\npostTitle" + reminder.postTitle +
+                    "\nsiteName" + reminder.siteName +
+                    "\nreminderDate" + reminder.reminderDate
+        );
     },
 
     Clear() {

@@ -4,7 +4,11 @@
 // @author       enki
 // @match        *://*.stackexchange.com/*
 // @match        *://*.stackoverflow.com/*
+// @match        *://*.superuser.com/*
+// @match        *://*.serverfault.com/*
+// @match        *://*.askubuntu.com/*
 // @match        *://*.stackapps.com/*
+// @match        *://*.mathoverflow.net/*
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addValueChangeListener

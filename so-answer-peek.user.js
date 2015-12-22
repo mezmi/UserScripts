@@ -3,7 +3,6 @@
 // @namespace    https://stackoverflow.com/users/1454538/
 // @author       enki
 // @match        *://*.stackexchange.com/questions/*
-// @exclude      *://*data.stackexchange.com/questions/*
 // @match        *://*.stackoverflow.com/questions/*
 // @match        *://*.superuser.com/questions/*
 // @match        *://*.serverfault.com/questions/*

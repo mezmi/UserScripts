@@ -2,7 +2,14 @@
 // @name         Answer Quick Peek
 // @namespace    https://stackoverflow.com/users/1454538/
 // @author       enki
-// @match        https://stackoverflow.com/questions/*
+// @match        *://*.stackexchange.com/questions/*
+// @exclude      *://*data.stackexchange.com/questions/*
+// @match        *://*.stackoverflow.com/questions/*
+// @match        *://*.superuser.com/questions/*
+// @match        *://*.serverfault.com/questions/*
+// @match        *://*.askubuntu.com/questions/*
+// @match        *://*.stackapps.com/questions/*
+// @match        *://*.mathoverflow.net/questions/*
 // @grant        none
 // @run-at document-end
 // ==/UserScript==

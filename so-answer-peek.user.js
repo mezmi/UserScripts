@@ -16,7 +16,7 @@
 'use strict';
 $(function () {
     var count = 0;
-    $("#answers div.answer:first").before("<div id='top-answers-peek' style='padding-bottom: 10px; border-bottom: 1px solid #eaebec;'><table style='margin:0 auto;'><tr></tr></table></div>");
+    $("#answers div.answer:first").before("<div id='top-answers-peek' style='padding-bottom: 10px; border-bottom: 1px solid #eaebec; display: none;'><table style='margin:0 auto; '><tr></tr></table></div>");
     $(".answercell").slice( 1, 5 ).each(function() {
         count++;
         var href = $(this).find(".short-link").attr("href"),
@@ -28,5 +28,8 @@ $(function () {
         
         $("#top-answers-peek table tr").append("<td style='width: 100px; text-align: center;'><a href=" + href + "><i class='" + icon + "' style='margin-bottom: 0;'></i> Score: " + score + "</a></td>");
     });
-    $("#top-answers-peek table").css("width", count * 100 + "px");
+    if (count > 0){
+        $("#top-answers-peek").show();
+        $("#top-answers-peek table").css("width", count * 100 + "px");
+    }
 });

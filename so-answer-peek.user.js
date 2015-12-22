@@ -17,7 +17,7 @@
 $(function () {
     var count = 0;
     $("#answers div.answer:first").before("<div id='top-answers-peek' style='padding-bottom: 10px; border-bottom: 1px solid #eaebec;'><table style='margin:0 auto;'><tr></tr></table></div>");
-    $(".answercell:lt(4)").each(function() {
+    $(".answercell").slice( 1, 5 ).each(function() {
         count++;
         var href = $(this).find(".short-link").attr("href"),
             score = $(this).prev().find(".vote-count-post").text(),

@@ -13,7 +13,7 @@ $(function () {
     $("#answers div.answer:first").before("<div id='top-answers-peek' style='margin:0 auto;'><table><tr></tr></table></div>");
     $(".answercell:lt(4)").each(function() {
         count++;
-        var href = $(this).find(".post-menu").find(".short-link").attr("href"),
+        var href = $(this).find(".short-link").attr("href"),
             score = $(this).prev().find(".vote-count-post").text(),
             icon = "vote-up-off";
         

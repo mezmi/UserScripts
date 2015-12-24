@@ -4,6 +4,8 @@ This is a collection of my UserScripts for various websites. I'll be adding more
 
 ### StackOverflow
 
+`helpful-flag-percentage` adds the overall percentage of helpful/declined flags & total helpful flags to the flag history page
+
 `views-since-last-visit` shows how many views **your** posts have had since you last visited them.
 
 `review-tag-reposition` copies or moves the question tags to the top while in the review queue, in response to [this post](https://meta.stackoverflow.com/questions/311043/show-tags-on-top-when-reviewing-questions)

@@ -1,0 +1,30 @@
+// ==UserScript==
+// @name         Affix Flag Summary
+// @namespace    https://stackoverflow.com/users/1454538/
+// @author       enki
+// @match        *://*.stackoverflow.com/users/flag-summary/*
+// @match        *://*.stackexchange.com/users/flag-summary/*
+// @match        *://*.superuser.com/users/flag-summary/*
+// @match        *://*.serverfault.com/users/flag-summary/*
+// @match        *://*.askubuntu.com/users/flag-summary/*
+// @match        *://*.stackapps.com/users/flag-summary/*
+// @run-at document-end
+// ==/UserScript==
+
+$(function(){ 
+    var top = $('#sidebar').offset().top,
+        left;
+
+    $(window).scroll(affix).resize(affix);
+
+    function affix() {
+        var scrollTop = $(window).scrollTop(),
+            left = $('#mainbar').offset().left + 780;
+        if (top < scrollTop) {
+            $('#sidebar').css({ position: 'fixed', top: 50, left: left });
+        }
+        else {
+            $('#sidebar').removeAttr("style");
+        }
+    }
+});

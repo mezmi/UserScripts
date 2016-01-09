@@ -16,6 +16,8 @@ This is a collection of my UserScripts for various websites. I'll be adding more
 
 `answer-peek` grabs the top 4 answers (skipping the first one) and displays a summary at the top of the answers cell, in response to [this post](https://meta.stackoverflow.com/questions/313098/improving-answer-visibility-by-listing-top-answers-on-top)
 
+`affix-flag-summary` affixes the overview when viewing the flagging summary
+
 
 ### Amazon
 

@@ -1,29 +1,26 @@
-#sox-popup {
-    display: none;
+
+#sox-bar {
     position: fixed;
-    height: 400px;
-    width: 50%;
-    min-width: 500px;
-    top: 25%;
-    left:25%;
+    height: 100%;
+    width: 400px;
+    top: 0;
+    left: 0;
+    
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     background-color: #fff;
-    border: solid 1px #aaa;
-    z-index: 10;
-    padding: 15px;
+    border-right: solid 1px #aaa;
+}
+#sox-bar-title{
+    margin-bottom:5px;
 }
 
-
-#sox-popup-close {
+#sox-bar-title a {
     float: right;
+    margin-right: 5px;
+ cursor: pointer;
 }
 
-#sox-popup-close a {
-    padding: 3px 6px 2px 6px;
-    font-size: 16px;
-    font-weight: normal;
-    color: #fff !important;
-    background-color: #222;
-    font-family: Arial,Helvetica,sans-serif;
-    line-height: 1;
+#sox-bar-features {
+    height: 100%;
+    overflow-y: auto;
 }

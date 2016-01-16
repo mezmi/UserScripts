@@ -19,7 +19,7 @@
 #sox-bar-title a {
     float: right;
     margin-right: 5px;
- cursor: pointer;
+    cursor: pointer;
 }
 
 #sox-bar-features {

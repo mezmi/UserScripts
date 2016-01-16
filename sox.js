@@ -1,4 +1,4 @@
-var functions = { 
+var sox = { 
 
     flagOutcomeTime: function () {
         $(".flag-outcome").each(function() {

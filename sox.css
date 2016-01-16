@@ -2,8 +2,8 @@
     display: block;
     position: fixed;
     height: 400px;
-    width: 550px;
+    width: 50%;
+    min-width: 500px;
     top: 25%;
-    margin: 0 auto;
-    
+    left:25%;
 }

@@ -13,6 +13,7 @@
 }
 #sox-bar-title{
     margin-bottom:5px;
+    padding: 10px;
 }
 
 #sox-bar-title a {
@@ -24,4 +25,5 @@
 #sox-bar-features {
     height: 100%;
     overflow-y: auto;
+    padding: 0 10px 10px 10px;
 }

@@ -1,5 +1,5 @@
 #sox-popup {
-    display: block;
+    display: none;
     position: fixed;
     height: 400px;
     width: 50%;

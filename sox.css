@@ -6,7 +6,13 @@
     min-width: 500px;
     top: 25%;
     left:25%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-color: #fff;
+    border: solid 1px #aaa;
+    z-index: 10;
+    padding: 15px;
 }
+
 
 #sox-popup-close {
     float: right;

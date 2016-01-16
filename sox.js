@@ -1,20 +1,4 @@
 var sox = {
-    addFeature: function(name, description) {
-        var $label = $("<label/>"),
-            $input = $("<input/>", {
-                id: name,
-                "type": "checkbox",
-                style: "margin-right: 5px;"
-            });
-        $label.append($input);
-        $input.after(description);
-        $("#sox-features-list").append($label)
-            .append("<br/>");
-    },
-    addFeatures: function() {
-        this.addFeature("scrollToTop", "Add Scroll To Top icon in navbar");
-    },
-
     flagOutcomeTime: function() {
         $(".flag-outcome").each(function() {
             $(this).append(" – " + $(this).attr("title"));
@@ -41,6 +25,24 @@ var sox = {
             }, 800);
             return false;
         });
+    },
+     
+     addFeature: function(name, description) {
+        var $label = $("<label/>"),
+            $input = $("<input/>", {
+                id: name,
+                "type": "checkbox",
+                style: "margin-right: 5px;"
+            });
+        $label.append($input);
+        $input.after(description);
+        $("#sox-features-list").append($label)
+            .append("<br/>");
+    },
+    
+    addFeatures: function() {
+        this.addFeature("scrollToTop", "Add Scroll To Top icon in navbar");
+        this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
     }
 
 };

@@ -1,0 +1,9 @@
+#features-popup {
+    display: block;
+    position: fixed;
+    height: 400px;
+    width: 550px;
+    top: 25%;
+    margin: 0 auto;
+    
+}

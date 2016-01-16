@@ -40,7 +40,7 @@ var sox = {
             });
         $label.append($input);
         $input.after(description);
-        $("#sox-features-list").append($label)
+        $("#sox-features").append($label)
             .append("<br/>");
     },
     

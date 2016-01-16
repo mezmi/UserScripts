@@ -1,28 +1,45 @@
-var sox = { 
+var sox = {
+    addFeature: function(name, description) {
+        var $label = $("<label/>"),
+            $input = $("<input/>", {
+                id: name,
+                "type": "checkbox",
+                style: "margin-right: 5px;"
+            });
+        $label.append($input);
+        $input.after(description);
+        $("#sox-features-list").append($label)
+            .append("<br/>");
+    },
+    addFeatures: function() {
+        this.addFeature("scrollToTop", "Add Scroll To Top icon in navbar");
+    },
 
-    flagOutcomeTime: function () {
+    flagOutcomeTime: function() {
         $(".flag-outcome").each(function() {
             $(this).append(" – " + $(this).attr("title"));
         });
     },
-    
-    scrollToTop: function(){
+
+    scrollToTop: function() {
         $(".topbar-links").append("<div id='scroll-container' class='links-container'><span><a id='scrollToTop' href='#' style='color: white;'>&#9650; TOP</a></span></div>");
         if ($(window).scrollTop() < 100) {
             $('#scroll-container').hide();
         }
-        
-        $(window).scroll(function(){
+
+        $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
-                $('#scroll-container').fadeIn();                
+                $('#scroll-container').fadeIn();
             } else {
                 $('#scroll-container').fadeOut();
             }
         });
-        
-        $('#scrollToTop').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-		        return false;
+
+        $('#scrollToTop').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
         });
     }
 

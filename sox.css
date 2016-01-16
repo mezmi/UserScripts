@@ -7,3 +7,17 @@
     top: 25%;
     left:25%;
 }
+
+#sox-popup-close {
+    float: right;
+}
+
+#sox-popup-close a {
+    padding: 3px 6px 2px 6px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff !important;
+    background-color: #222;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1;
+}

@@ -66,10 +66,10 @@ var sox = {
     
     loadFeatures: function() {
         this.addCategory("Appearance");
-        this.addFeature("scrollToTop", "Add Scroll To Top buttom");
-        this.addFeature("hideHireMe", "Hides the Looking for a Job module");
-        this.addFeature("hideCommunityBulletin", "Hides the Community Bulletin module");
-        this.addFeature("hideHotNetworkQuestions", "Hides the Hot Network Questions module")
+        this.addFeature("scrollToTop", "Add Scroll To Top button");
+        this.addFeature("hideHireMe", "Hide the Looking for a Job module");
+        this.addFeature("hideCommunityBulletin", "Hide the Community Bulletin module");
+        this.addFeature("hideHotNetworkQuestions", "Hide the Hot Network Questions module")
         this.addCategory("Flagging");
         this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
         

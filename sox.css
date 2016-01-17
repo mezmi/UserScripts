@@ -32,6 +32,9 @@
     overflow-y: auto;
     padding: 0 10px 10px 10px;
 }
+#sox-bar-features h3:nth-child(n+2) {
+    margin-top: 5px;
+}
 
 #sox-bar-close { float: right;}
 #sox-bar-close a {

@@ -52,8 +52,8 @@ var sox = {
     
     addCategory: function(name) {
         var $div = $("<div/>"),
-            $h2 = $("<h2/>", {text: name});
-            $div.append($h2);
+            $h3 = $("<h3/>", {text: name});
+            $div.append($h3);
         $("#sox-bar-features").append($div);
     },
     

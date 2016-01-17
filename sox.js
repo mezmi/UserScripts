@@ -2,6 +2,9 @@ var sox = {
     hideHireMe: function() {
         $("#hireme").hide();
     },
+    hideCommunityBulletin: function() {
+        $("#sidebar .community-bulletin").hide();
+    },
     
     flagOutcomeTime: function() {
         $(".flag-outcome").each(function() {
@@ -59,8 +62,9 @@ var sox = {
     
     loadFeatures: function() {
         this.addCategory("Appearance");
-        this.addFeature("scrollToTop", "Add Scroll To Top icon in navbar");
+        this.addFeature("scrollToTop", "Add Scroll To Top buttom");
         this.addFeature("hideHireMe", "Hides the Looking for a Job section in the sidebar");
+        this.addFeature("hideCommunityBulletin", "Hides the Community Bulletin section in the sidebar");
         this.addCategory("Flagging");
         this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
         

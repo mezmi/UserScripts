@@ -1,9 +1,13 @@
 var sox = {
+    hideHotNetworkQuestions: function() {
+        $("#hot-network-questions").remove();
+    },
+    
     hideHireMe: function() {
-        $("#hireme").hide();
+        $("#hireme").remove();
     },
     hideCommunityBulletin: function() {
-        $("#sidebar .community-bulletin").hide();
+        $("#sidebar .community-bulletin").remove();
     },
     
     flagOutcomeTime: function() {
@@ -63,8 +67,9 @@ var sox = {
     loadFeatures: function() {
         this.addCategory("Appearance");
         this.addFeature("scrollToTop", "Add Scroll To Top buttom");
-        this.addFeature("hideHireMe", "Hides the Looking for a Job section in the sidebar");
-        this.addFeature("hideCommunityBulletin", "Hides the Community Bulletin section in the sidebar");
+        this.addFeature("hideHireMe", "Hides the Looking for a Job module");
+        this.addFeature("hideCommunityBulletin", "Hides the Community Bulletin module");
+        this.addFeature("hideHotNetworkQuestions", "Hides the Hot Network Questions module")
         this.addCategory("Flagging");
         this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
         

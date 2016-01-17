@@ -10,25 +10,31 @@ var sox = {
     },
 
     scrollToTop: function() {
-        $(".topbar-links").append("<div id='scroll-container' class='links-container'><span><a id='scrollToTop' href='#' style='color: white;'>&#9650; TOP</a></span></div>");
-        if ($(window).scrollTop() < 100) {
-            $('#scroll-container').hide();
-        }
-
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-                $('#scroll-container').fadeIn();
-            } else {
-                $('#scroll-container').fadeOut();
-            }
-        });
-
-        $('#scrollToTop').click(function() {
+        var $scroll = $("<div/>", {
+        id: "sox-scrollToTop",
+        click: function(e) {
+            e.preventDefault();
             $('html, body').animate({
                 scrollTop: 0
             }, 800);
             return false;
-        });
+        }
+    })
+    .append($("<i/>", {
+        class: "fa fa-angle-double-up fa-3x"
+    })).appendTo("div.container");
+
+    if ($(window).scrollTop() < 200) {
+        $('#sox-scrollToTop').hide();
+    }
+    
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#sox-scrollToTop').fadeIn();
+        } else {
+            $('#sox-scrollToTop').fadeOut();
+        }
+    });
     },
      
      addFeature: function(name, description) {

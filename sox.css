@@ -23,8 +23,8 @@
     cursor: pointer;
 }
 
-#sox-bar-title b {
-    line-height: 23px;
+#sox-bar-title h3 {
+    display: inline;
 }
 
 #sox-bar-features {

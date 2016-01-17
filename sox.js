@@ -60,9 +60,10 @@ var sox = {
     loadFeatures: function() {
         this.addCategory("Appearance");
         this.addFeature("scrollToTop", "Add Scroll To Top icon in navbar");
-        this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
         this.addFeature("hideHireMe", "Hides the Looking for a Job section in the sidebar");
         this.addCategory("Flagging");
+        this.addFeature("flagOutcomeTime", "Append the time a flag was handled to the outcome");
+        
     }
 
 };

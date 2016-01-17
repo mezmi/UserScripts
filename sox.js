@@ -18,23 +18,22 @@ var sox = {
                 scrollTop: 0
             }, 800);
             return false;
-        }
-    })
-    .append($("<i/>", {
-        class: "fa fa-angle-double-up fa-3x"
-    })).appendTo("div.container");
-
-    if ($(window).scrollTop() < 200) {
-        $('#sox-scrollToTop').hide();
-    }
+        }})
+        .append($("<i/>", {
+            class: "fa fa-angle-double-up fa-3x"
+        })).appendTo("div.container");
     
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-            $('#sox-scrollToTop').fadeIn();
-        } else {
-            $('#sox-scrollToTop').fadeOut();
+        if ($(window).scrollTop() < 200) {
+            $('#sox-scrollToTop').hide();
         }
-    });
+        
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('#sox-scrollToTop').fadeIn();
+            } else {
+                $('#sox-scrollToTop').fadeOut();
+            }
+        });
     },
      
      addFeature: function(name, description) {

@@ -21,7 +21,6 @@
 // ==/UserScript==
 $(document).ajaxComplete(function(event, request, settings) {
     if (~settings.url.indexOf('/review/')) {
-        console.log(settings.url);
         repositionTags();
     }
 });

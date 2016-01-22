@@ -4,30 +4,33 @@
 // @namespace    https://stackoverflow.com/users/1454538/
 // @author       ᴉʞuǝ
 // @match        *://*.stackoverflow.com/review/*
-// @run-at document-end
+// @match        *://*.askubuntu.com/review/*
+// @match        *://*.mathoverflow.net/review/*
+// @match        *://*.serverfault.com/review/*
+// @match        *://*.stackapps.com/review/*
+// @match        *://*.stackexchange.com/review/*
+// @match        *://*.stackoverflow.com/review/*
+// @match        *://*.superuser.com/review/*
+// @exclude      *://api.stackexchange.com/*
+// @exclude      *://blog.stackexchange.com/*
+// @exclude      *://blog.stackoverflow.com/*
+// @exclude      *://data.stackexchange.com/*
+// @exclude      *://elections.stackexchange.com/*
+// @exclude      *://stackexchange.com/*
+// @run-at       document-end
 // ==/UserScript==
-
-setTimeout( repositionTags , 600); 
-    
-function repositionTags() {
-    var tagHTML = $("div.post-taglist").prop("outerHTML");
-    $("div.post-taglist").remove(); //comment this line if you want to keep the tags at the bottom as well.
-    $("div.post-text").before(tagHTML);
-}
-
-// polling method from this answer - http://stackoverflow.com/a/18997637/1454538
-var fireOnHashChangesToo    = true;
-var pageURLCheckTimer       = setInterval (
-    function () {
-        if (   this.lastPathStr  !== location.pathname
-            || this.lastQueryStr !== location.search
-            || (fireOnHashChangesToo && this.lastHashStr !== location.hash)
-        ) {
-            this.lastPathStr  = location.pathname;
-            this.lastQueryStr = location.search;
-            this.lastHashStr  = location.hash;
-            repositionTags();
-        }
+$(document).ajaxComplete(function(event, request, settings) {
+    if (~settings.url.indexOf('/review/')) {
+        console.log(settings.url);
+        repositionTags();
     }
-    , 111
-);
+});
+
+function repositionTags() {
+    var $taglist = $(".post-taglist").clone(),
+        $header = $(".subheader h2:first");
+
+    $taglist.css("clear", "none");
+    $header.css({ "line-height": "1.6", 
+                 "margin-right": "10px" }).after($taglist);
+}

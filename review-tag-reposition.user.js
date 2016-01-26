@@ -22,7 +22,7 @@
 $(document).ajaxComplete(function(event, request, settings) {
     if (~settings.url.indexOf('/review/')) {
             var $taglist = $(".post-taglist").clone(),
-            $header = $(".subheader h2:first");
+                $header = $(".subheader h2:first");
             $taglist.css("clear", "none");
             $header.css({ "line-height": "1.6", 
                          "margin-right": "10px" }).after($taglist);

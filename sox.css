@@ -65,6 +65,9 @@
 
 /* -------- SOX Features CSS ------- */
 
+div.search-container {display: none;}
+
+
 #sox-scrollToTop{
     position:fixed;
     right: 0; bottom: 0; 

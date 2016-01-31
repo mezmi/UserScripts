@@ -65,7 +65,7 @@
 
 /* -------- SOX Features CSS ------- */
 
-div.search-container {display: none;}
+div.search-container {display: none !important;}
 
 
 #sox-scrollToTop{

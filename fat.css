@@ -1,0 +1,22 @@
+.answer-star-on,
+.answer-star-off {
+    height: 30px;
+    width: 40px;
+    background-image: url('https://cdn.sstatic.net/stackoverflow/img/sprites.svg?v=a7723f5f7e59'), none;
+    background-size: initial;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-indent: -9999em;
+    font-size: 1px;
+    cursor: pointer;
+}
+
+.answer-star-off {
+    background-position: 0 -120px;
+}
+
+.answer-star-on {
+    background-position: -40px -120px;
